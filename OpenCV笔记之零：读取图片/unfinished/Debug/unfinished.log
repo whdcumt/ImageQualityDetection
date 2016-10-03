@@ -1,0 +1,27 @@
+﻿生成启动时间为 10/3/2016 6:13:22 PM。
+     1>项目“C:\Users\Administrator.IES7LSEJAZ1GGRL\Desktop\OpenCV笔记之零：读取图片\unfinished\unfinished.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在对“Debug\unfinished.unsuccessfulbuild”执行 Touch 任务。
+       ClCompile:
+         所有输出均为最新。
+         所有输出均为最新。
+       ManifestResourceCompile:
+         所有输出均为最新。
+       Link:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Administrator.IES7LSEJAZ1GGRL\Desktop\OpenCV笔记之零：读取图片\Debug\unfinished.exe" /INCREMENTAL /NOLOGO opencv_calib3d247d.lib opencv_contrib247d.lib opencv_core247d.lib opencv_features2d247d.lib opencv_flann247d.lib opencv_gpu247d.lib opencv_highgui247d.lib opencv_imgproc247d.lib opencv_legacy247d.lib opencv_ml247d.lib opencv_objdetect247d.lib opencv_ts247d.lib opencv_video247d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\unfinished.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Administrator.IES7LSEJAZ1GGRL\Desktop\OpenCV笔记之零：读取图片\Debug\unfinished.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Administrator.IES7LSEJAZ1GGRL\Desktop\OpenCV笔记之零：读取图片\Debug\unfinished.lib" /MACHINE:X86 Debug\unfinished.exe.embed.manifest.res
+         Debug\stdafx.obj
+         Debug\unfinished.obj
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\unfinished.exe.embed.manifest" /manifest Debug\unfinished.exe.intermediate.manifest
+         所有输出均为最新。
+       LinkEmbedManifest:
+         所有输出均为最新。
+         unfinished.vcxproj -> C:\Users\Administrator.IES7LSEJAZ1GGRL\Desktop\OpenCV笔记之零：读取图片\Debug\unfinished.exe
+       FinalizeBuildStatus:
+         正在删除文件“Debug\unfinished.unsuccessfulbuild”。
+         正在对“Debug\unfinished.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“C:\Users\Administrator.IES7LSEJAZ1GGRL\Desktop\OpenCV笔记之零：读取图片\unfinished\unfinished.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:06.69

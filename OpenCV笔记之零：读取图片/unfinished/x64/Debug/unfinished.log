@@ -1,0 +1,19 @@
+﻿生成启动时间为 9/22/2016 4:30:34 PM。
+     1>项目“E:\OpenCV学习笔记\OpenCV学习笔记\OpenCV笔记之二：显示图片\unfinished\unfinished.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在对“x64\Debug\unfinished.unsuccessfulbuild”执行 Touch 任务。
+       ClCompile:
+         所有输出均为最新。
+         所有输出均为最新。
+       ManifestResourceCompile:
+         所有输出均为最新。
+       Link:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\OpenCV学习笔记\OpenCV学习笔记\OpenCV笔记之二：显示图片\x64\Debug\unfinished.exe" /INCREMENTAL /NOLOGO opencv_calib3d247d.lib opencv_contrib247d.lib opencv_core247d.lib opencv_features2d247d.lib opencv_flann247d.lib opencv_gpu247d.lib opencv_highgui247d.lib opencv_imgproc247d.lib opencv_legacy247d.lib opencv_ml247d.lib opencv_objdetect247d.lib opencv_ts247d.lib opencv_video247d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"x64\Debug\unfinished.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\OpenCV学习笔记\OpenCV学习笔记\OpenCV笔记之二：显示图片\x64\Debug\unfinished.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\OpenCV学习笔记\OpenCV学习笔记\OpenCV笔记之二：显示图片\x64\Debug\unfinished.lib" /MACHINE:X64 x64\Debug\unfinished.exe.embed.manifest.res
+         x64\Debug\stdafx.obj
+         x64\Debug\unfinished.obj
+     1>x64\Debug\stdafx.obj : fatal error LNK1112: 模块计算机类型“X86”与目标计算机类型“x64”冲突
+     1>已完成生成项目“E:\OpenCV学习笔记\OpenCV学习笔记\OpenCV笔记之二：显示图片\unfinished\unfinished.vcxproj”(build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.33
