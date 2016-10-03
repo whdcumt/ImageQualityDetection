@@ -4,7 +4,9 @@
 (2)测试图片：test1.jpg,test2.jpg,test3.jpg
    测试结果：效果1.png,效果2.png.效果3.png
 ##存储备份
-Github:     <br>
-程序云盘phonenumber：http://pan.baidu.com/s/1sltPupR <br>
+Github:https://github.com/whdcumt/ImageQualityDetection<br>
+程序云盘phonenumber：<br>
+偏色检测:http://pan.baidu.com/s/1sltPupR <br>
+清晰检测:http://pan.baidu.com/s/1kVhkuhD<br>
 ##整理时间
 2016.10.3
