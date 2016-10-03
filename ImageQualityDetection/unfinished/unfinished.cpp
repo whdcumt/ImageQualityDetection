@@ -83,10 +83,46 @@ void colorException(Mat InputImg,float& cast,float& da,float& db)
     float K=D/M;  
     cast = K;  
     return;  
-} 
+}  
+/********************************************************************************************************************************************************* 
+*函数描述：  brightnessException     计算并返回一幅图像的亮度  
+*函数参数：  InputImg    需要计算的图片，BGR存放格式，彩色（3通道），灰度图无效 
+*            cast        计算出的偏差值，小于1表示比较正常，大于1表示存在亮度异常；当cast异常时，da大于0表示过亮，da小于0表示过暗 
+*函数返回值： 返回值通过cast、da两个引用返回，无显式返回值 
+**********************************************************************************************************************************************************/  
+void brightnessException (Mat InputImg,float& cast,float& da)  
+{  
+    Mat GRAYimg;  
+    cvtColor(InputImg,GRAYimg,CV_BGR2GRAY);  
+    float a=0;  
+    int Hist[256];  
+    for(int i=0;i<256;i++)  
+    Hist[i]=0;  
+    for(int i=0;i<GRAYimg.rows;i++)  
+    {  
+        for(int j=0;j<GRAYimg.cols;j++)  
+        {  
+            a+=float(GRAYimg.at<uchar>(i,j)-128);//在计算过程中，考虑128为亮度均值点  
+            int x=GRAYimg.at<uchar>(i,j);  
+            Hist[x]++;  
+        }  
+    }  
+    da=a/float(GRAYimg.rows*InputImg.cols);  
+    float D =abs(da);  
+    float Ma=0;  
+    for(int i=0;i<256;i++)  
+    {  
+        Ma+=abs(i-128-da)*Hist[i];  
+    }  
+    Ma/=float((GRAYimg.rows*GRAYimg.cols));  
+    float M=abs(Ma);  
+    float K=D/M;  
+    cast = K;  
+    return;  
+}  
 int main(int argc, char* argv[])
 {
-	const char*imagename="E:\\ImageQualityDetection\\ImageQualityDetection\\t5.jpg";  //此处需要根据要显示图片文件的实际文件位置更改
+	const char*imagename="E:\\ImageQualityDetection\\ImageQualityDetection\\te6.jpg";  //此处需要根据要显示图片文件的实际文件位置更改
 	//从文件中读入图像
 	Mat img=imread(imagename);
 	//如果读取图像失败
@@ -106,9 +142,16 @@ int main(int argc, char* argv[])
 	//printf("色偏值为:%f,红绿偏估计值为：%f,黄蓝偏估计值为：%f\n",cast,da,db);
 	//此函数等待按键，按键盘任意键返回
 	//*****************************************************************************
-	double def;
-	def=DefRto(img);  
-	printf("清晰度为:%f\n",def);
+	//清晰度检测
+	//double def;
+	//def=DefRto(img);  
+	//printf("清晰度为:%f\n",def);
+	//******************************************************************************
+	//亮度检测
+	float cast=0.0;
+	float da=0.0;
+	brightnessException(img,cast,da);
+	printf("亮度偏差值:%f,过亮过暗指标：%f\n",cast,da);
 	waitKey();
 	while(1);
 	return 0;
